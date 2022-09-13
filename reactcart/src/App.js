@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import data from './components/back/data/Data';
 import Header from './components/front/header/Header';
 import {BrowserRouter as Router} from "react-router-dom";
-import Momta from './components/Momta';
 import RRoutes from "./components/front/routes/RRoutes"
 const App = () => { 
   const {productItems} = data;
