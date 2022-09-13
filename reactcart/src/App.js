@@ -3,6 +3,7 @@ import data from './components/back/data/Data';
 import Header from './components/front/header/Header';
 import {BrowserRouter as Router} from "react-router-dom";
 import RRoutes from "./components/front/routes/RRoutes"
+import Footer from './components/front/footer/Footer';
 const App = () => { 
   const {productItems} = data;
  // console.log("pitems1", productItems);
@@ -36,13 +37,25 @@ const App = () => {
 
   return (
     <div>
+
+      <div>
       <Router>
         <Header cartItems = {cartItems}/>
         <RRoutes productItems = {productItems } cartItems = {cartItems} handleAddProduct = {handleAddProduct}
         handleRemoveProduct = {handleRemoveProduct}
         handleCartClearance = {handleCartClearance}
-        />  
+        /> 
+         
       </Router>
+
+      </div>
+
+      <div>
+        <Footer/>
+        </div>
+
+
+
 
     </div>
   )
